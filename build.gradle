@@ -16,7 +16,7 @@ apply plugin: 'org.spongepowered.mixin'
 
 group = 'com.blackgear.bgcore'
 version = '1.0'
-archivesBaseName = 'bgcore-1.15.2'
+archivesBaseName = 'bgcore-1.16.5'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
@@ -25,7 +25,7 @@ mixin {
 }
 
 minecraft {
-    mappings channel: 'snapshot', version: '20210128-1.15.1'
+    mappings channel: 'snapshot', version: '20201028-1.16.3'
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     runs {
@@ -79,7 +79,7 @@ repositories{
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.15.2-31.2.47'
+    minecraft 'net.minecraftforge:forge:1.16.5-36.0.13'
 }
 
 jar {
