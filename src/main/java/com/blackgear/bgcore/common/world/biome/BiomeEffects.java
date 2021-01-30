@@ -18,7 +18,7 @@ public class BiomeEffects {
     public static class Builder {
         private Optional<ParticleBiomeEffect> particle = Optional.empty();
 
-        public BiomeEffects.Builder setParticles(ParticleBiomeEffect particle) {
+        public Builder setParticles(ParticleBiomeEffect particle) {
             this.particle = Optional.of(particle);
             return this;
         }

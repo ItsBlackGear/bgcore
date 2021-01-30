@@ -1,7 +1,6 @@
 package com.blackgear.bgcore.client.renderer;
 
 import com.blackgear.bgcore.client.model.AxolotlBristleModel;
-import com.blackgear.bgcore.client.model.WardenBristleModel;
 import com.blackgear.bgcore.core.BGCore;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;

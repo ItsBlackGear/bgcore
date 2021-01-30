@@ -22,7 +22,7 @@ public abstract class AbstractBiome extends Biome {
      * @param surfaceBuilderSupplier    the supplied surface builder
      */
     public AbstractBiome(Builder biomeBuilder, Supplier<ConfiguredSurfaceBuilder<?>> surfaceBuilderSupplier) {
-        this(biomeBuilder, surfaceBuilderSupplier, new AbstractBiome.EffectBuilder().getEffects(new BiomeEffects.Builder().build()));
+        this(biomeBuilder, surfaceBuilderSupplier, new EffectBuilder().getEffects(new BiomeEffects.Builder().build()));
     }
 
     /**
@@ -44,12 +44,12 @@ public abstract class AbstractBiome extends Biome {
     }
 
     @Override
-    public ConfiguredSurfaceBuilder<?> getSurfaceBuilder() {
+    public ConfiguredSurfaceBuilder<?> func_205401_q() {
         return this.surfaceBuilderSupplier.get();
     }
 
     @Override
-    public ISurfaceBuilderConfig getSurfaceBuilderConfig() {
+    public ISurfaceBuilderConfig func_203944_q() {
         return this.surfaceBuilderSupplier.get().getConfig();
     }
 
